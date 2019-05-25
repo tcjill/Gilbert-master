@@ -45,7 +45,7 @@ public class Tour {
         mImageResourceId = imageResourceId;
     }
 
-    public Tour(int ic_action_achievement) {
+    public Tour(int number_one, int ic_action_achievement) {
     }
 
     /**
