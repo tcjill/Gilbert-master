@@ -45,6 +45,9 @@ public class Tour {
         mImageResourceId = imageResourceId;
     }
 
+    public Tour(int ic_action_achievement) {
+    }
+
     /**
      * Get the default translation of the word.
      */
