@@ -3,32 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/tan_background"
+    android:background="@color/primary_color"
     android:orientation="vertical"
->
+    tools:context="com.example.android.gilbert.MainActivity">
 
-    <TextView
-        android:id="@+id/attractions"
-        style="@style/CategoryStyle"
-        android:background="@color/category_attractions"
-        android:text="@string/category_attractions" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        style="@style/CategoryTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <TextView
-        android:id="@+id/bars"
-        style="@style/CategoryStyle"
-        android:background="@color/category_bars"
-        android:text="@string/category_bars" />
-
-    <TextView
-        android:id="@+id/hotels"
-        style="@style/CategoryStyle"
-        android:background="@color/category_hotels"
-        android:text="@string/category_hotels" />
-
-    <TextView
-        android:id="@+id/eats"
-        style="@style/CategoryStyle"
-        android:background="@color/category_eats"
-        android:text="@string/category_eats" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
