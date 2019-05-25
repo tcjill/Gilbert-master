@@ -1,7 +1,6 @@
 package android.example.gilbert;
 
-import android.example.gilbert.AttractionsFragment;
-import android.example.gilbert.R;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -16,6 +15,4 @@ public class Attractions extends AppCompatActivity {
                 .commit();
     }
 }
-
-
 
