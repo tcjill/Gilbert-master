@@ -1,5 +1,6 @@
 package android.example.gilbert;
 
+
 /**
  * {@link Tour} represents a vocabulary word that the user wants to learn.
  * It contains a default translation, a Miwok translation, and an image for that word.
