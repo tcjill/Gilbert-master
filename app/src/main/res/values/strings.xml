@@ -2,6 +2,10 @@
     <string name="app_name">Gilbert</string>
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_eats">Eats</string>
+    <!--Eats Places -->
+    <string name="Filibertos">Filibertos</string>
+    <string name="Filibertos_hours">24/7</string>
+    <string name="Filibertos_address">1212 Williamsfield Rd</string>
 
     <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
     <string name="category_hotels">Hotels</string>
