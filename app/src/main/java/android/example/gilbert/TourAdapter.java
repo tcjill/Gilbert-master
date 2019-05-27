@@ -1,7 +1,6 @@
 package android.example.gilbert;
 
 import android.content.Context;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,12 +14,13 @@ import java.util.ArrayList;
  * {@link TourAdapter} is an {@link ArrayAdapter} that can provide the layout for each list item
  * based on a data source, which is a list of {@link Tour} objects.
  */
-public class TourAdapter extends ArrayAdapter<Tour>  {
+public class TourAdapter extends ArrayAdapter<Tour> {
 
     /**
      * Create a new {@link TourAdapter} object.
-     *  @param context is the current context (i.e. Activity) that the adapter is being created in.
-     * @param tours is the list of {@link Tour}s to be displayed.
+     *
+     * @param context              is the current context (i.e. Activity) that the adapter is being created in.
+     * @param tours                is the list of {@link Tour}s to be displayed.
      * @param category_attractions is a list?
      */
     public TourAdapter(Context context, ArrayList<Tour> tours, int category_attractions) {
@@ -39,12 +39,12 @@ public class TourAdapter extends ArrayAdapter<Tour>  {
         // Get the {@link Word} object located at this position in the list
         Tour currentWord = getItem(position);
         TextView tv1 = listItemView.findViewById(R.id.miwok_text_view);
-        tv1.setText(currentWord.getMiwokTranslation());
+        tv1.setText(currentWord.getmPlaceLocal());
 
 
         //ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
         //imageView setImageResource(currentWord.getImageResourceId());
-        //Find the ImageView in the list_item.xml layout with the ID image.
+        // Find the ImageView in the list_item.xml layout with the ID image.
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
         // Check if an image is provided for this word or not
         if (currentWord.hasImage()) {
@@ -60,14 +60,12 @@ public class TourAdapter extends ArrayAdapter<Tour>  {
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.text_container);
         // Find the color that the resource ID maps to
-       // int color = ContextCompat.getColor(getContext(), mColorResourceId);
+        //int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
-        //textContainer.setBackgroundColor(color);
+        // textContainer.setBackgroundColor(color);
 
         // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
         // the ListView.
-
-
 
 
         return listItemView;

@@ -2,47 +2,37 @@ package android.example.gilbert;
 
 
 /**
- * {@link Tour} represents a vocabulary word that the user wants to learn.
- * It contains a default translation, a Miwok translation, and an image for that word.
+ * {@link Tour} represents a place and an image for that place.
  */
 public class Tour {
 
-    /** Default translation for the word */
-    private String mDefaultTranslation;
-
-    /** Miwok translation for the word */
-    private String mMiwokTranslation;
-
-    /** Image resource ID for the word */
+    /**
+     * Constant value that represents no image was provided for this word
+     */
+    private static final int NO_IMAGE_PROVIDED = -1;
+    /**
+     * Default title for the word
+     */
+    private String mDefaultPlace;
+    /**
+     * address for the word
+     */
+    private String mPlaceLocal;
+    /**
+     * Image resource ID for the word
+     */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    /** Constant value that represents no image was provided for this word */
-    private static final int NO_IMAGE_PROVIDED = -1;
 
-    /**
-     * Create a new Word object.
-     *
-     * @param defaultTranslation is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param miwokTranslation is the word in the Miwok language
-     */
-    public Tour(String defaultTranslation, String miwokTranslation) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+    public Tour(String defaultPlace, String placeLocal) {
+        mDefaultPlace = defaultPlace;
+        mPlaceLocal = placeLocal;
     }
 
-    /**
-     * Create a new Word object.
-     *
-     * @param defaultTranslation is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param miwokTranslation is the word in the Miwok language
-     * @param imageResourceId is the drawable resource ID for the image associated with the word
-     *
-     */
-    public Tour(String defaultTranslation, String miwokTranslation, int imageResourceId) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
+
+    public Tour(String defaultPlace, String placeLocal, int imageResourceId) {
+        mDefaultPlace = defaultPlace;
+        mPlaceLocal = placeLocal;
         mImageResourceId = imageResourceId;
     }
 
@@ -50,17 +40,17 @@ public class Tour {
     }
 
     /**
-     * Get the default translation of the word.
+     * Get the default place
      */
-    public String getDefaultTranslation() {
-        return mDefaultTranslation;
+    public String getmDefaultPlace() {
+        return mDefaultPlace;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the local.
      */
-    public String getMiwokTranslation() {
-        return mMiwokTranslation;
+    public String getmPlaceLocal() {
+        return mPlaceLocal;
     }
 
     /**
