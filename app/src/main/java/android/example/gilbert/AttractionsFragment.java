@@ -25,14 +25,13 @@ public class AttractionsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tour_list, container, false);
         // Create a list of entertainment places
         final ArrayList<Tour> tour = new ArrayList<Tour>();
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "Riparian", R.drawable.riparian));
+        tour.add(new Tour("Title", "Water Tower", R.drawable.watertower));
+        tour.add(new Tour("Title", "Hale Centre Theatre", R.drawable.hale));;
+        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));;
+        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));
 
         // Create an {@link TourAdapter}, whose data source is a list of {@link Tour}s. The
         // adapter knows how to create list items for each item in the list.

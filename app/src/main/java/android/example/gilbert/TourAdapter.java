@@ -37,6 +37,14 @@ public class TourAdapter extends ArrayAdapter<Tour>  {
 
         // Get the {@link Word} object located at this position in the list
         Tour currentWord = getItem(position);
+        TextView tv1 = listItemView.findViewById(R.id.miwok_text_view);
+        tv1.setText(currentWord.getMiwokTranslation());
+
+
+        //ImageView imageView = (ImageView) listItemView.findViewById(R.id.image);
+       // imageView setImageResource(currentWord.getImageResourceId());
+
+
 
 
         return listItemView;

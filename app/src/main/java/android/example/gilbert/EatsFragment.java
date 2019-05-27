@@ -25,11 +25,11 @@ public class EatsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tour_list, container, false);
         // Create a list of entertainment places
         final ArrayList<Tour> tour = new ArrayList<Tour>();
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "Filibertos", R.drawable.ic_action_achievement));;
+        tour.add(new Tour("Title", "Topo", R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "Pomo text", R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "The Novelist", R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "Lolo's Chicken and Waffles", R.drawable.ic_action_achievement));
         tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
         tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
         tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
