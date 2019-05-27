@@ -24,11 +24,11 @@ public class HotelsFragment extends Fragment {
                              Bundle savedInstanceState) { View rootView = inflater.inflate(R.layout.tour_list, container, false);
         // Create a list of entertainment places
         final ArrayList<Tour> tour = new ArrayList<Tour>();
-        tour.add(new Tour("Title", "Home2 Suites by Hilton", R.drawable.ic_action_achievement));;
-        tour.add(new Tour("Title", "Hampton Inn & Suites", R.drawable.ic_action_achievement));
-        tour.add(new Tour("Title", "Hyatt Place", R.drawable.ic_action_achievement));
-        tour.add(new Tour("Title", "DoubleTree", R.drawable.ic_action_achievement));
-        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "Home2 Suites by Hilton", R.drawable.baseline_hotel_black_24dp));;
+        tour.add(new Tour("Title", "Hampton Inn & Suites", R.drawable.baseline_hotel_black_24dp));
+        tour.add(new Tour("Title", "Hyatt Place", R.drawable.baseline_hotel_black_24dp));
+        tour.add(new Tour("Title", "DoubleTree", R.drawable.baseline_hotel_black_24dp));
+        tour.add(new Tour("Title", "Sample text", R.drawable.baseline_hotel_black_24dp));
         tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
         tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
         tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));

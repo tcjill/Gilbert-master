@@ -28,10 +28,6 @@ public class AttractionsFragment extends Fragment {
         tour.add(new Tour("Title", "Riparian", R.drawable.riparian));
         tour.add(new Tour("Title", "Water Tower", R.drawable.watertower));
         tour.add(new Tour("Title", "Hale Centre Theatre", R.drawable.hale));;
-        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));
-        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));
-        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));;
-        tour.add(new Tour("Title", "Sample text", R.drawable.ic_action_achievement));
 
         // Create an {@link TourAdapter}, whose data source is a list of {@link Tour}s. The
         // adapter knows how to create list items for each item in the list.

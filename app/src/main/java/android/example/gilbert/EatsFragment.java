@@ -25,14 +25,11 @@ public class EatsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.tour_list, container, false);
         // Create a list of entertainment places
         final ArrayList<Tour> tour = new ArrayList<Tour>();
-        tour.add(new Tour("Title", "Filibertos", R.drawable.ic_action_achievement));;
-        tour.add(new Tour("Title", "Topo", R.drawable.ic_action_achievement));
-        tour.add(new Tour("Title", "Pomo text", R.drawable.ic_action_achievement));
-        tour.add(new Tour("Title", "The Novelist", R.drawable.ic_action_achievement));
-        tour.add(new Tour("Title", "Lolo's Chicken and Waffles", R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
-        tour.add(new Tour(R.drawable.ic_action_achievement,R.drawable.ic_action_achievement));
+        tour.add(new Tour("Title", "Filibertos", R.drawable.baseline_local_dining_black_24dp));;
+        tour.add(new Tour("Title", "Topo", R.drawable.baseline_local_dining_black_24dp));
+        tour.add(new Tour("Title", "Pomo text", R.drawable.baseline_local_dining_black_24dp));
+        tour.add(new Tour("Title", "The Novelist", R.drawable.baseline_local_dining_black_24dp));
+        tour.add(new Tour("Title", "Lolo's Chicken and Waffles", R.drawable.baseline_local_dining_black_24dp));
 
         // Create an {@link TourAdapter}, whose data source is a list of {@link Tour}s. The
         // adapter knows how to create list items for each item in the list.

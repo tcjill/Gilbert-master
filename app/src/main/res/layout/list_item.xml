@@ -31,7 +31,7 @@
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/black"
             android:textStyle="bold"
-            tools:text="lutti" />
+            tools:text="Gilbert" />
 
         <TextView
             android:id="@+id/default_text_view"
@@ -42,7 +42,7 @@
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/white"
-            tools:text="one" />
+            tools:text="Places" />
 
         <ImageView
             android:layout_width="24dp"
@@ -50,6 +50,6 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="16dp"
-            android:src="@drawable/riparian" />
+             />
     </RelativeLayout>
 </RelativeLayout>
